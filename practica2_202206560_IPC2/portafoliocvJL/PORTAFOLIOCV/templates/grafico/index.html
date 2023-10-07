@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/style/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <div class="foto_perfil">
+                <img src="{%static '/imgs/perfil.png'%}" alt="Foto de perfil">
+            </div>
+            <div class="info_personal">
+                <div class="introduccion">
+                    <h2>José Daniel Lorenzana Medina</h2>
+                    <h4>Estudiante de Ingeniería en Sistemas</h4>
+                    <div class="redes">
+                        <a href="#"><i class="fab fa-facebook" style="color:var(--blue);"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color:var(--dark_pink);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color:var(--sky_blue);"></i></a>
+                    </div>
+                </div>
+    
+                <div class="contacto">
+                    <div class="fila">
+                        <div class="icono">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                    
+                        <div class="contenido">
+                            <span>Teléfono</span>
+                            <h5>+502 4189-8354</h5>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="icono">
+                            <i class="fa-solid fa-envelope"  style="color:var(--super_sky_blue);"></i>
+                        </div>
+                    
+                        <div class="contenido">
+                            <span>Correo</span>
+                            <h5>jodanielorenzana@gmail.com</h5>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="icono">
+                            <i class="fa-solid fa-globe"  style="color:var(--orange);"></i>
+                        </div>
+                    
+                        <div class="contenido">
+                            <span>País de Residencia</span>
+                            <h5>Guatemala</h5>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="proyectos_github">
+                    <h2>Proyectos en GitHub</h2>
+                    <div class="imagen_proyecto">
+                        <img src="{% static '/imgs/coding-programming-working-macbook.jpg' %}" alt="Descripción de la imagen">
+                    </div>
+                    <div class="botones">
+                        <button onclick="redirectToListaCategorias()" class="boton_descargar">Ver Proyectos</button>
+                        <button class="boton_descargar">Descargar CV</button>
+                        <script>
+                            function redirectToListaCategorias() {
+                                window.location.replace("https://github.com/JoseLorenzana272")
+                            }
+                        </script>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        <div class="acerca_de">
+            <h2>Acerca de Mi</h2>
+            <p>
+                Soy un estudiante de Ingeniería en Sistemas, actualmente estoy cursando el 4to semestre de la carrera. 
+                Me gusta aprender cosas nuevas y me considero una persona autodidacta, me gusta mucho la programación y 
+                el desarrollo web, me gusta mucho aprender sobre nuevas tecnologías y me considero una persona muy 
+                responsable y comprometida con lo que hago.
+            </p>
+            <br>
+            <h3>Estudios</h3>
+            <p>
+                En 2020 inicié mis estudios en Bachillerato en Computación en el Colegio Bilingüe El Prado,
+                estos estudios los culminé en 2021, actualmente estoy cursando el 4to semestre de la carrera
+                de Ingeniería en Sistemas en la Universidad de San Carlos de Guatemala.
+            </p>
+            <br>
+            <h3>Intereses y Hobbies</h3>
+            <p>
+                Me gusta tocar mucho el piano, escuchar música, también me gustan ver películas y series
+                que sean de mi interés, me gusta jugar basquetball y bicicletear de vez en cuando.
+            </p>
+            <br>
+            <h2>Habilidades <!DOCTYPE html></h2>
+            <div class="habilidades">
+                <div class="contenedor_habilidades">
+                    <div class="icono">
+                        <img src="{% static '/imgs/icons8-python-100.png' %}" alt="Python">
+                    </div>
+                    <div class="nombre">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="barra-porcentaje">
+                        <div class="porcentaje_py">70%</div>
+                    </div>
+                </div>
+
+                <div class="contenedor_habilidades">
+                    <div class="icono">
+                        <img src="{% static '/imgs/icons8-logotipo-de-java-coffee-cup-100.png' %}" alt="Java">
+                    </div>
+                    <div class="nombre">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="barra-porcentaje">
+                        <div class="porcentaje_java">60%</div>
+                    </div>
+                </div>
+
+                <div class="contenedor_habilidades">
+                    <div class="icono">
+                        <img src="{% static '/imgs/icons8-c-100.png' %}" alt="C">
+                        <img src="{% static '/imgs/icons8-unidad-100.png' %}" alt="unity">
+                    </div>
+                    <div class="nombre">
+                        <h3>C# y Unity</h3>
+                    </div>
+                    <div class="barra-porcentaje">
+                        <div class="porcentaje_c">65%</div>
+                    </div>
+                </div>
+
+                <div class="contenedor_habilidades">
+                    <div class="icono">
+                        <img src="{% static '/imgs/icons8-mysql-100.png' %}" alt="C">
+                    </div>
+                    <div class="nombre">
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="barra-porcentaje">
+                        <div class="porcentaje_my">55%</div>
+                    </div>
+                </div>
+
+                <div class="contenedor_habilidades">
+                    <div class="icono">
+                        <img src="{% static '/imgs/icons8-filmora-100.png' %}" alt="filmora">
+                        <img src="{% static '/imgs/icons8-adobe-premiere-pro-100.png' %}" alt="adobe">
+                    </div>
+                    <div class="nombre">
+                        <h3>Edición de Video</h3>
+                    </div>
+                    <div class="barra-porcentaje">
+                        <div class="porcentaje_video">85%</div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

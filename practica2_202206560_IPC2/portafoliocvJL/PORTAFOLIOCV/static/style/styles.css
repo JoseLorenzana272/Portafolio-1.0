@@ -1,0 +1,338 @@
+:root{
+    --blue: #007bff;
+    --sky_blue: #00bfff;
+    --dark_pink: #ff1493;
+    --super_sky_blue: #87ceeb;
+    --orange: #ffa500;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #01194b, #1c3cc9);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.tarjeta{
+    background: #161e2e;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 3rem;
+    color: antiquewhite;
+    margin: 15px;
+}
+
+.tarjeta .foto_perfil{
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.tarjeta .foto_perfil img{
+    border-radius: 10px;
+}
+
+.tarjeta .info_personal{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+
+.info_personal .introduccion{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.info_personal .introduccion h2{
+    margin-top: 19px;
+}
+
+.introduccion {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.info_personal .introduccion h4{
+    margin: 8px;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-weight: 400;
+    background: #485164;
+}
+
+.info_personal .introduccion redes{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.info_personal .introduccion .redes i{
+    color: #ece4e4;
+    font-size: 16px;
+    background-color: rgb(61, 55, 47);
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.info_personal .introduccion .redes i:hover{
+    transform:scale(1.2);
+    border: 1px solid #dddcdc;
+}
+
+.info_personal .introduccion .redes i:active{
+    background-color: #dddcdc;
+}
+
+.info_personal .contacto{
+    background-color: #575454;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+.info_personal .contacto .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #45484e;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.contacto .fila .icono{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #161e2e;
+    text-align: center;
+    color: #ece4e4;
+    transition: 0.5s;
+}
+
+.fila .icono:hover{
+    transform: scale(1.2);
+    border: 1px solid #575454;
+}
+
+.fila .icono:active{
+    background-color: #575454;
+}
+
+.fila .contenido{
+    min-width: 70%;
+}
+
+.fila .contenido span{
+    font-size: 15px;
+}
+
+
+.boton_descargar{
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    color: #ece4e4;
+    transition: 0.5s;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+.boton_descargar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boton_descargar:active{
+    background: #01194b;
+}
+
+.acerca_de{
+    background: #161e2e;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    color: antiquewhite;
+}
+
+.acerca_de h2{
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.acerca_de h2::after{
+    position: absolute;
+    content: "";
+    width: 45%;
+    top: 50%;
+    right: -50%;
+    height: 3px;
+    background: linear-gradient(45deg, #007bff, #00bfff);
+}
+
+.acerca_de h3{
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.acerca_de h3::after{
+    position: absolute;
+    content: "";
+    width: 45%;
+    top: 50%;
+    right: -50%;
+    height: 3px;
+    background: linear-gradient(45deg, #007bff, #00bfff);
+}
+
+
+
+.acerca_de .habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+}
+
+.habilidades .contenedor_habilidades {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo a columna */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    border-radius: 8px;
+    border: 1px solid #45484e;
+    padding: 1.2rem;
+    margin: 0.8rem;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.barra-porcentaje {
+    width: 100%; /* La barra de porcentaje ocupa todo el ancho del contenedor */
+    background-color: #ccc;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.porcentaje_py {
+    width: 75%;
+    height: 100%;
+    background-color: #0074e4;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.porcentaje_java {
+    width: 60%;
+    height: 100%;
+    background-color: #0074e4;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.porcentaje_c {
+    width: 65%;
+    height: 100%;
+    background-color: #0074e4;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.porcentaje_my {
+    width: 55%;
+    height: 100%;
+    background-color: #0074e4;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.porcentaje_video {
+    width: 85%;
+    height: 100%;
+    background-color: #0074e4;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.imagen_proyecto {
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.imagen_proyecto img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    border-radius: 10px; /* Estilo de borde según tus preferencias */
+}
+
+.boton_descargar {
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    color: #ece4e4;
+    transition: 0.5s;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+.boton_descargar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boton_descargar:active {
+    background: #01194b;
+}
+
+.proyectos_github {
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Alinea los elementos horizontalmente */
+}
+
+@media(max-width: 768px){
+    .acerca_de{
+        flex-direction: column;
+    }
+    .acerca_de h2{
+        font-size: 2.1rem;
+    }
+    .acerca_de .habilidades{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+}
